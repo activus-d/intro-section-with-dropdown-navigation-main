@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/*************************************
+LAYOUT FOR BODY
+*************************************/
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 41%);
+}
+
+/*************************************
+LAYOUT FOR NAV
+*************************************/
+nav {
+    width: 100vw;
+    flex-basis: 10%;
+    height: 10%;
+    display: flex;
+}
+.mainLogoDiv {
+    flex-basis: 10%;
+}
+.dropdown {
+    flex-basis: 55%;
+    display: flex;
+}
+.dropdownBtn div{
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    flex-basis: 10%;
+    position: absolute;
+    right: 10%;
+    display: none;
+}
+.logReg {
+    flex-basis: 25%;
+
+}
+/*************************************
+LAYOUT FOR MAIN
+*************************************/
+main {
+    flex-basis: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+.sectionOne {
+    flex-basis: 50%;
+    width: 50%;
+    display: flex;
+}
+.sponsors {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*************************************
+LAYOUT FOR FOOTER
+*************************************/
+footer {
+    flex-basis: 10%;
+    height: 10%;
+    display: flex;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR BODY
+*************************************/
+body {
+    padding: 3rem;
+    background: hsl(0, 0%, 91%);
+    font-family: 'Commissioner', sans-serif;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR NAV
+*************************************/
+nav {
+    padding: 1rem
+}
+.mainLogo {
+    width: 7rem;
+    height: 2rem;
+}
+.dropdown {
+    padding-left: 0rem;
+}
+.dropdownSelect1 {
+    display: block;
+    width: 100%;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.dropdownSelect1:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.dropdownSelect2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+.dropdownSelect2:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.dropdownBtn{
+    margin-right: 3rem;
+}
+.dropdown1 {
+    display: flex;
+    min-width: 10rem;
+    flex-direction: column;
+    margin-right: 3rem;
+    padding: 1rem 0rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.5rem;
+    left: 12%;
+}
+.dropdown2 {
+    display: flex;
+    min-width: 8rem;
+    flex-direction: column;
+    margin-right: 3rem;
+    padding: 1rem 0rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.5rem;
+}
+.dropdownList1 {
+    display: flex;
+    padding: 0.4rem 1rem;
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+}
+.dropdownList1:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+    background: hsl(0, 0%, 91%);
+}
+.dropdownList2 {
+    display: flex;
+    padding: 0.2rem 1rem;
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+}
+.dropdownList2:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+    background: hsl(0, 0%, 91%);
+}
+.dropdownIcon {
+    width: 1rem;
+    margin-right: 0.8rem;
+    
+}
+.careers {
+    margin-right: 3rem;
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+}
+.careers:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.about {
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+}
+.about:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.menu {
+    flex-basis: 10%;
+}
+.logReg {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.log {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: hsl(0, 0%, 91%);
+    color: hsl(0, 0%, 41%);
+}
+.log:hover {
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.reg {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: hsl(0, 0%, 91%);
+    color: hsl(0, 0%, 41%);
+}
+.reg:hover {
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR MAIN
+*************************************/
+main {
+
+}
+.sectionOne {
+    flex-basis: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8.5rem 7rem 0rem 15rem;
+}
+.mainContent {
+    flex-basis: 80%;
+}
+.sectionTwo {
+    flex-basis: 50%;
+    width: 50%;
+    height: 100%;
+    max-height: 100%;
+    padding: 2rem 5rem 0 5rem;
+}
+h1 {
+    font-size: 6rem;
+    text-align: left;
+    color: hsl(0, 0%, 8%);
+    line-height: 0.9;
+    margin-bottom: 3rem;
+    padding-right: 3rem;
+}
+p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.learnMoreBtn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-bottom: 3rem;
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 91%);
+}
+.learnMoreBtn:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    background: hsl(0, 0%, 91%);
+}
+
+.sponsors img {
+    width: 7rem
+}
+.mainImage {
+    width: 80%;
+    height: 100%;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR FOOTER
+*************************************/
+.attribution { 
+    margin: 0 auto;
+    padding-top: 3rem;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*************************************
+STYLES FOR SCREEN SIZE 1300PX
+*************************************/
+@media all and (max-width: 1200px) {
+    .sectionOne {
+        padding: 8.5rem 7rem 0rem 13rem;
+        flex-shrink: 0.5;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .sectionTwo {
+        padding: 2rem 3rem 0 3rem;
+        flex-shrink: 1;
+    }
+    .sponsors {
+        flex-shrink: 1;
+    }
+    .sponsors img {
+        width: 5rem
+    }
+}
+
+/*************************************
+STYLES FOR SCREEN SIZE 1000PX
+*************************************/
+@media all and (max-width: 1000px) {
+    .sectionOne {
+        padding: 8.5rem 7rem 0rem 11rem;
+    }
+    h1 {
+        padding-right: 0;
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    .learnMoreBtn {
+        margin-bottom: 3rem;
+    }
+    
+} 
+
+
+/*************************************
+STYLES FOR SCREEN SIZE 850PX
+*************************************/
+@media all and (max-width: 850px) {
+    .sectionTwo {
+        padding: 2rem 2rem 0 2rem;
+    }
+    
+}
