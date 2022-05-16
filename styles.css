@@ -58,7 +58,7 @@ nav {
     width: 2.3rem;
     position: absolute;
     right: 4%;
-    top: 2%;
+    top: 4%;
     visibility: hidden;
 }
 .logReg {
@@ -105,8 +105,8 @@ body {
     font-family: 'Commissioner', sans-serif;
 }
 .overlay {
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     background: black;
     position: absolute;
     opacity: 0.75;
@@ -474,7 +474,7 @@ STYLES FOR MOBILE SCREEN SIZE 500PX
     .navContainer {
         /* flex-basis: 90%; */
         display: block;
-        height: 100%;
+        min-height: 100vh;
         width: 0%; /* width to dde modified with js */
         /* visibility: hidden; */
         flex-direction: column;
@@ -485,6 +485,9 @@ STYLES FOR MOBILE SCREEN SIZE 500PX
         right: -20%;
         transition: 0.7s; 
         overflow: hidden;
+    }
+    .mainLogo {
+        margin-top: 1rem
     }
     .menuContainer {
         /* background-image: url(images/icon-menu.svg); */
