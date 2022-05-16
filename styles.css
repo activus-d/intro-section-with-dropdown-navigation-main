@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/*************************************
+LAYOUT FOR BODY
+*************************************/
+body {
+    max-width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 41%);
+}
+
+/*************************************
+LAYOUT FOR NAV
+*************************************/
+nav {
+    flex-basis: 10%;
+    height: 10%;
+    display: flex;
+}
+.mainLogoDiv {
+    flex-basis: 10%;
+}
+.navContainer {
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown {
+    flex-basis: 65%;
+    display: flex;
+}
+.dropdownBtn div{
+    display: flex;
+    flex-direction: column;
+}
+.arrow1 {
+    margin-left: 0.4rem;
+}
+.arrow2 {
+    margin-left: 0.4rem;
+}
+
+.menuContainer {
+    flex-basis: 0%;
+    height: 1.8rem;
+    width: 2.3rem;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    visibility: hidden;
+}
+.logReg {
+    flex-basis: 35%;
+
+}
+/*************************************
+LAYOUT FOR MAIN
+*************************************/
+main {
+    flex-basis: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.sectionOne {
+    flex-basis: 50%;
+    width: 50%;
+    display: flex;
+}
+.sponsors {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/*************************************
+LAYOUT FOR FOOTER
+*************************************/
+footer {
+    flex-basis: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR BODY
+*************************************/
+body {
+    padding: 3rem;
+    background: hsl(0, 0%, 91%);
+    font-family: 'Commissioner', sans-serif;
+}
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: absolute;
+    opacity: 0.75;
+    visibility: hidden;
+    transition: 0.5s;
+    /* z-index: 2; */
+}
+
+/*************************************
+ADDITIONAL STYLES FOR NAV
+*************************************/
+nav {
+    padding: 1rem
+}
+.mainLogoDiv {
+    padding-top: 0.5rem;
+}
+.mainLogo {
+    width: 7rem;
+    height: 2rem;
+}
+.dropdown {
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+}
+.dropdownSelect1 {
+    display: block;
+    width: 100%;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.dropdownSelect1:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.dropdownSelect2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+.dropdownSelect2:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.dropdownBtn{
+    margin-right: 3rem;
+}
+.dropdown1 {
+    display: flex;
+    /* min-width: 10rem; */
+    flex-direction: column;
+    margin: 0 3rem 0.5rem 0;
+    padding: 1rem 0rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.5rem;
+    left: 12%;
+}
+.dropdown2 {
+    display: flex;
+    /* min-width: 8rem; */
+    flex-direction: column;
+    margin: 0 3rem 0.5rem 0;
+    padding: 1rem 0rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.5rem;
+}
+.dropdownList1 {
+    display: flex;
+    padding: 0.4rem 1rem;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.dropdownList1:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+    background: hsl(0, 0%, 91%);
+}
+.dropdownList2 {
+    display: flex;
+    padding: 0.2rem 1rem;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.dropdownList2:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+    background: hsl(0, 0%, 91%);
+}
+.dropdownIcon {
+    width: 1rem;
+    margin-right: 0.8rem;
+    
+}
+.careers {
+    margin-right: 3rem;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.careers:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.about {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.about:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.logReg {
+    /* flex-basis: 25%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.log {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: hsl(0, 0%, 91%);
+    color: hsl(0, 0%, 41%);
+    font-size: 1rem !important;
+}
+.log:hover {
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+.reg {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    border: none;
+    background: hsl(0, 0%, 91%);
+    color: hsl(0, 0%, 41%);
+    font-size: 1rem !important;
+}
+.reg:hover {
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR MAIN
+*************************************/
+.sectionOne {
+    /* flex-basis: 55%; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8.5rem 7rem 0rem 15rem;
+}
+.mainContent {
+    flex-basis: 80%;
+}
+.sectionTwo {
+    flex-basis: 45%;
+    width: 45%;
+    background-image: url(images/image-hero-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 15rem;
+}
+h1 {
+    font-size: 6rem;
+    text-align: left;
+    color: hsl(0, 0%, 8%);
+    line-height: 0.9;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 3rem;
+}
+p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.learnMoreBtn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-bottom: 3rem;
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 91%);
+}
+.learnMoreBtn:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    background: hsl(0, 0%, 91%);
+}
+
+.sponsors img {
+    width: 7rem
+}
+.mainImage {
+    width: 75%;
+    height: 100%;
+}
+
+/*************************************
+ADDITIONAL STYLES FOR FOOTER
+*************************************/
+.attribution { 
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*************************************
+STYLES FOR SCREEN SIZE 1300PX
+*************************************/
+@media all and (max-width: 1200px) {
+    .sectionOne {
+        padding: 8.5rem 7rem 0rem 13rem;
+        flex-shrink: 0.5;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .sectionTwo {
+        flex-shrink: 1;
+    }
+    .sponsors {
+        flex-shrink: 1;
+    }
+    .sponsors img {
+        width: 5rem
+    }
+}
+
+/*************************************
+STYLES FOR SCREEN SIZE 1000PX
+*************************************/
+@media all and (max-width: 1000px) {
+    .sectionOne {
+        padding: 8.5rem 7rem 0rem 11rem;
+    }
+    .sectionTwo {
+        margin-left: 10rem;
+    }
+    h1 {
+        padding-right: 0;
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    .learnMoreBtn {
+        margin-bottom: 3rem;
+    }
+    
+} 
+
+/*************************************
+STYLES FOR SCREEN SIZE 850PX
+*************************************/
+@media all and (max-width: 850px) {
+    .sectionTwo {
+        margin-left: 5rem;
+    }
+    .sectionOne {
+        padding: 8.5rem 5rem 0rem 9rem;
+    }
+    nav {
+        padding: 0rem;
+    }
+}
+
+/*************************************
+STYLES FOR SCREEN SIZE 770PX
+*************************************/
+@media all and (max-width: 770px) {
+    .sectionOne {
+        padding: 8.5rem 3.5rem 0rem 3.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+    .learnMoreBtn {
+        margin-bottom: 2rem;
+    }
+    .sponsors img {
+        width: 3rem;
+    }
+}
+
+
+/*************************************
+STYLES FOR SCREEN SIZE 645PX
+*************************************/
+@media all and (max-width: 650px) {
+    .sectionTwo {
+        margin-top: 2rem;
+    }
+    .logReg {
+        justify-content: flex-start;
+    }
+}
+
+/*************************************
+STYLES FOR SCREEN SIZE 620PX
+*************************************/
+@media all and (max-width: 620px) {
+    .sectionTwo {
+        margin-top: 3rem;
+    }
+    .sectionOne {
+        padding: 8.5rem 4rem 0rem 6rem;
+    }
+}
+
+/*************************************
+STYLES FOR SCREEN SIZE 600PX
+*************************************/
+@media all and (max-width: 600px) {
+    .sectionTwo {
+        margin-top: 5rem;
+    }
+    .sectionOne {
+        padding: 8.5rem 3rem 0rem 5rem;
+    }
+}
+
+
+/*************************************
+STYLES FOR SCREEN SIZE 560PX
+*************************************/
+@media all and (max-width: 560px) {
+    .sectionTwo {
+        margin-top: 9rem;
+    }
+    .sectionOne {
+        padding: 8.5rem 2rem 0rem 2rem;
+    }
+}
+
+
+/*************************************
+STYLES FOR MOBILE SCREEN SIZE 500PX
+*************************************/
+@media all and (max-width: 500px) {
+    body {
+        height: 100vh;
+        display: block;
+        padding: 1.5rem 2rem;
+    }
+  
+    .navContainer {
+        /* flex-basis: 90%; */
+        display: block;
+        height: 100%;
+        width: 0%; /* width to dde modified with js */
+        /* visibility: hidden; */
+        flex-direction: column;
+        background: white;;
+        position: absolute;
+        justify-content: space-between;
+        /* padding: 3rem 1.5rem;   */
+        right: -20%;
+        transition: 0.7s; 
+        overflow: hidden;
+    }
+    .menuContainer {
+        /* background-image: url(images/icon-menu.svg); */
+        background-size: cover;
+        visibility: visible;
+    }
+    .menu {
+        height: 100%;
+        width: 100%;
+    }
+    nav {
+        margin-bottom: 1.5rem;
+    }
+    .dropdown {
+        flex-basis: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdownBtn {
+        margin-bottom: 0rem;
+    }
+    .dropdownSelect1 {
+        padding-left: 0;
+    }
+    .dropdown1 {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        margin-right: 3rem;
+        padding: 0;
+        font-weight: 300;
+        position: static;
+        background: white;
+        border-radius: 0.5rem;
+    }
+    .dropdown2 {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        margin-right: 3rem;
+        padding: 0;
+        position: static;
+        background: white;
+        border-radius: 0.5rem;
+    }
+    .dropdownList1 {
+        padding: 0 0 0.8rem 1.5rem;
+    }
+    .careers {
+        margin-bottom: 1rem;
+    }
+    .about {
+        margin-bottom: 1rem;
+    }
+    .dropdownList2 {
+        padding: 0 0 0.8rem 1.5rem;
+    }
+    .logReg {
+        /* flex-basis: 25%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .log {
+        width: 10rem;
+        height: 2.5rem;
+        margin-left: 0rem;
+        border: none;
+        background: white;
+        color: hsl(0, 0%, 41%);
+        font-size: 1rem !important;
+    }
+    .reg {
+        width: 10rem;
+        height: 2.5rem;
+        margin-left: 0rem;
+        border: none;
+        background: white;
+        color: hsl(0, 0%, 41%);
+        font-size: 1rem !important;
+    }
+    main {
+        flex-basis: 80%;
+        height: 80%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: -1;
+    }
+    .sectionOne {
+        flex-basis: 45%;
+        height: 45%;
+        width: 100%;
+        padding: 0;
+    }
+    .sectionTwo {
+        flex-basis: 55%;
+        width: 100%;
+        min-height: 21rem;
+        background-image: url(images/image-hero-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .mainContent {
+        display: block;
+        margin-top: 0;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .sponsors img {
+        width: 4.5rem;
+    }
+    .attribution {
+        flex-basis: 5%;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/*************************************
+STYLES FOR MOBILE SCREEN SIZE 250PX
+*************************************/
+@media all and (max-width: 250px) {
+    .sectionTwo {
+        flex-basis: 30%;
+        min-height: 10rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .sponsors img {
+        width: 3.5rem;
+    }
+}
+
+/*************************************
+STYLES FOR MOBILE SCREEN SIZE 200PX
+*************************************/
+@media all and (max-width: 200px) {
+    .sectionTwo {
+        min-height: 12rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .sponsors img {
+        width: 3rem;
+    }
+}
+
+
+
+
+
+.hide {
+    display: none;
+    /* width: 0 !important; */
+}
